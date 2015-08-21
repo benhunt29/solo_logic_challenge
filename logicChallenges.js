@@ -44,3 +44,18 @@ var numbers1=[4,1,6,5,8];
 var numbers2=[7,3,2,9,10];
 test2 = addArraysInOrder(numbers1,numbers2);
 console.log(test2);
+
+//Question 3
+
+function rightTriangle(a,b){
+	this.a = a;
+	this.b = b;
+};
+
+rightTriangle.prototype.hypotenuse = function(){
+	this.c = Math.sqrt(Math.pow(this.a,2)+Math.pow(this.b,2));
+}
+
+var triangle = new rightTriangle(3,4);
+triangle.hypotenuse();
+console.log(triangle.c);
