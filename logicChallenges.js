@@ -59,3 +59,16 @@ rightTriangle.prototype.hypotenuse = function(){
 var triangle = new rightTriangle(3,4);
 triangle.hypotenuse();
 console.log(triangle.c);
+
+//Question 4
+
+function recursive(num){
+	if(num == 0){
+		return 0;
+	}else{
+		return num + recursive(num - 1);
+	}
+}
+
+test = recursive(5);
+console.log(test);
